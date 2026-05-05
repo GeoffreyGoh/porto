@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  firstName: "Geoffrey",
+  lastName: "Gohtama",
+  name: `Geoffrey Gohtama`,
+  role: "Student",
+  avatar: "/images/avatar.jpeg",
+  email: "geoffreygo03@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["Indonesian", "English", "Mandarin"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My thoughts on AI, web development, and tech innovation</>,
 };
 
 const social: Social = [
@@ -25,31 +25,19 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/GeoffreyGoh",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/geoffrey-gohtama",
     essential: true,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: "mailto:geoffreygo03@gmail.com",
     essential: true,
   },
 ];
@@ -94,7 +82,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,9 +90,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a computer science student at Binus University in Jakarta, passionate about artificial intelligence
+        and its applications in solving real-world problems. With expertise in full-stack development, I'm dedicated to
+        exploring how machine learning and emerging technologies can drive innovation and enhance user experiences.
       </>
     ),
   },
@@ -113,41 +101,65 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "HIMTI (Indonesian Computer Science Student Association)",
+        timeframe: "2023-2025",
+        role: "President (Regional Coordinator)",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led HIMTI Alam Sutera's strategic and operational initiatives, coordinating with the regional team
+            and university leadership to strengthen organizational impact.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Fostered greater student engagement through innovative event planning and collaboration with other
+            divisions and organizations.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "ITB Comparative Study Program",
+        timeframe: "2024",
+        role: "Events Division Coordinator",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led the event division in organizing large-scale programs and managing comprehensive logistics
+            and team coordination.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Ensured successful execution and positive participant experiences through effective real-time
+            communication and stakeholder coordination.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "SESVENT 2024",
+        timeframe: "2024",
+        role: "Technical Division Coordinator",
+        achievements: [
+          <>
+            Oversaw technical operations of the event, managing system setup and resolving technical
+            issues to ensure reliable performance.
+          </>,
+          <>
+            Coordinated with multimedia and logistics teams to maintain smooth execution throughout
+            the program.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "HIMTI INTERNSHIP 2025",
+        timeframe: "2025",
+        role: "Event Chairman",
+        achievements: [
+          <>
+            Directed HIMTI Internship 2025, guiding participants through the organization's divisions
+            while managing cross-department coordination.
+          </>,
+          <>
+            Managed event logistics and leadership alignment to enhance member understanding and engagement
+            across the organization.
           </>,
         ],
         images: [],
@@ -159,12 +171,19 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Binus University",
+        timeframe: "2023 - Now",
+        description: <>Computer Science Global Class Major with focus on AI and software development.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "BPK Penabur Gading Serpong",
+        timeframe: "2020 - 2023",
+        description: <>High School education with strong foundation in STEM subjects.</>,
+      },
+      {
+        name: "Yuan Ze University",
+        timeframe: "2026",
+        description: <>Student exchange program for international exposure and cross-cultural learning for 1 semester.</>,
       },
     ],
   },
@@ -173,60 +192,63 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Programming Languages",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Proficient in Java, Python, C, JavaScript, and HTML/CSS for diverse development needs.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Java",
+            icon: "java",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Python",
+            icon: "python",
           },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
           {
             name: "JavaScript",
             icon: "javascript",
           },
+        ],
+        images: [],
+      },
+      {
+        title: "Web & Database Development",
+        description: (
+          <>Experienced with MySQL databases, frontend design in Figma, and version control with GitHub.</>
+        ),
+        tags: [
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "MySQL",
+            icon: "database",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Figma",
+            icon: "figma",
+          },
+          {
+            name: "GitHub",
+            icon: "github",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Productivity & Design Tools",
+        description: (
+          <>Skilled with Microsoft Office suite for documentation, presentations, and data analysis. Proficient with Jira for project management and issue tracking.</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "MS Office",
+            icon: "microsoft",
+          },
+          {
+            name: "Jira",
+            icon: "jira",
           },
         ],
+        images: [],
       },
     ],
   },

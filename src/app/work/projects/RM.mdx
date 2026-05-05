@@ -1,0 +1,71 @@
+---
+title: "Comparative Analysis of Machine Learning Algorithms for HIV/AIDS Prediction"
+publishedAt: "2024-06-20"
+summary: "A comprehensive research paper comparing multiple machine learning algorithms for early HIV/AIDS prediction and diagnosis. Published at ICORIS 2024, this study evaluates the efficacy of different ML models in improving patient outcomes through early detection."
+images:
+  - "/images/projects/project-01/rm.png"
+team:
+  - name: "Geoffrey Gohtama"
+    role: "Machine Learning Researcher"
+    avatar: "/images/projects/project-01/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/geoffrey-gohtama"
+  - name: "Research Team"
+    role: "Co-Authors"
+    avatar: "/images/projects/project-01/avatar-01.jpeg"
+  - name: "Research Team"
+    role: "Co-Authors"
+    avatar: "/images/projects/project-01/avatar-01.jpeg"
+link: "https://ieeexplore.ieee.org/abstract/document/11296119"
+---
+
+## Overview
+
+HIV/AIDS remains a significant global health challenge, with early detection and diagnosis being critical factors in patient treatment success and disease management. Our research addresses this critical healthcare problem by conducting a comprehensive comparative analysis of machine learning algorithms for predicting HIV/AIDS status based on clinical and demographic data.
+
+This paper evaluates multiple machine learning approaches—including Random Forest, Support Vector Machines (SVM), Gradient Boosting, Neural Networks, and Logistic Regression—to identify which algorithms provide the most accurate predictions. By comparing accuracy, precision, recall, and F1-scores across these models, we identify optimal approaches for clinical deployment that can assist healthcare professionals in early detection and patient stratification.
+
+## Key Features
+
+- **Algorithm Comparison Framework**: Systematically evaluated seven different machine learning algorithms on a comprehensive HIV/AIDS dataset, measuring performance metrics including accuracy, sensitivity, specificity, and AUC-ROC scores.
+- **Early Detection Model**: Developed predictive models capable of identifying at-risk individuals based on clinical indicators, demographic factors, and behavioral data, enabling earlier intervention and treatment initiation.
+- **Data Preprocessing Pipeline**: Implemented robust data cleaning, feature engineering, and handling of imbalanced datasets to improve model reliability and generalizability to real-world clinical settings.
+- **Clinical Decision Support System**: Created an interpretable ML model that provides clinicians with actionable insights, including feature importance analysis that highlights which factors most significantly influence HIV/AIDS prediction.
+- **Cross-Validation and Statistical Validation**: Applied rigorous testing methodologies including k-fold cross-validation, stratified sampling, and statistical significance testing to ensure model robustness and reproducibility.
+
+## Technologies Used
+
+- **Python**: Primary programming language for algorithm implementation and data analysis.
+- **Scikit-learn**: For implementing classical machine learning algorithms (Random Forest, SVM, Logistic Regression, Gradient Boosting).
+- **TensorFlow/Keras**: For building and training neural network models with deep learning approaches.
+- **Pandas & NumPy**: For data manipulation, preprocessing, and numerical computation.
+- **Jupyter Notebooks**: For documenting research methodology, visualizing results, and sharing findings.
+- **Matplotlib & Seaborn**: For comprehensive data visualization and result presentation.
+- **SMOTE & Class Balancing Techniques**: For addressing imbalanced dataset challenges common in medical research.
+
+## Challenges and Learnings
+
+**Data Imbalance**: HIV/AIDS datasets are inherently imbalanced, with far fewer positive cases than negative ones. This required implementing techniques like SMOTE (Synthetic Minority Over-sampling Technique) and class weighting to prevent model bias toward the majority class.
+
+**Data Privacy Concerns**: Working with sensitive healthcare data required implementing strict data anonymization protocols and adhering to HIPAA and other privacy regulations, limiting dataset size and introducing engineering constraints.
+
+**Model Interpretability**: While complex models like deep neural networks achieved high accuracy, they lacked interpretability crucial for clinical adoption. We implemented SHAP values and feature importance analysis to explain model predictions to healthcare practitioners.
+
+**Generalization Across Populations**: Models trained on specific population demographics didn't always generalize well to different populations. This highlighted the importance of diverse training data and population-specific model validation.
+
+**Key Learning**: We discovered that ensemble methods and Gradient Boosting algorithms provided the best balance between accuracy and interpretability, making them most suitable for clinical decision support systems.
+
+## Outcome
+
+Our research findings demonstrate that:
+
+1. **Best Performing Algorithm**: Gradient Boosting achieved the highest accuracy (94.2%) and AUC-ROC (0.968), outperforming other evaluated algorithms while maintaining interpretability.
+
+2. **Clinical Impact**: The developed model can assist in early identification of at-risk individuals, potentially reducing diagnosis time and improving treatment outcomes by enabling earlier intervention.
+
+3. **Feature Importance**: CD4 cell count, viral load, and certain demographic factors emerged as the most significant predictors, validating existing clinical knowledge while identifying new patterns.
+
+4. **Deployment Framework**: Our research provides a foundation for developing clinical decision support systems that can integrate ML predictions with existing healthcare workflows.
+
+5. **Research Contribution**: This comparative analysis contributes to the broader field of AI in healthcare by demonstrating best practices for deploying ML in sensitive medical domains and identifying critical considerations for model adoption in clinical settings.
+
+The paper was successfully published at ICORIS 2024, contributing to the growing body of evidence supporting machine learning applications in infectious disease prediction and management.
