@@ -40,6 +40,12 @@ const social: Social = [
     link: "mailto:geoffreygo03@gmail.com",
     essential: true,
   },
+  {
+    name: "CV",
+    icon: "download",
+    link: "/images/projects/project-01/Geoffrey%20Gohtama's%20CV.pdf",
+    essential: true,
+  },
 ];
 
 const home: Home = {
