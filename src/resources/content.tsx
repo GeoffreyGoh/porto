@@ -6,14 +6,14 @@ const person: Person = {
   lastName: "Gohtama",
   name: `Geoffrey Gohtama`,
   role: "Student",
-  avatar: "/images/avatar.jpeg",
+  avatar: "/images/projects/project-01/avatar.jpeg",
   email: "geoffreygo03@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Indonesian", "English", "Mandarin"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My thoughts on AI, web development, and tech innovation</>,
 };
@@ -48,23 +48,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Exploring AI, research, and full-stack development</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Research Methodology</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/RM",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Geoffrey, a computer science student at <Text as="span" size="xl" weight="strong">Binus University</Text> passionate about AI and research. I build projects exploring machine learning, <br /> and full-stack web development.
 </>
   ),
 };
